@@ -11,7 +11,7 @@ I'm sharing it here in case anyone finds it useful or wants to take parts of it 
 If you want everything working out of the box on Arch, you'll need these packages installed:
 
 ```bash
-sudo pacman -S --needed zsh eza bat zoxide fzf zsh-autosuggestions zsh-syntax-highlighting reflector
+sudo pacman -S --needed zsh eza bat zoxide fzf zsh-autosuggestions zsh-syntax-highlighting reflector fastfetch
 ```
 
 ## License
