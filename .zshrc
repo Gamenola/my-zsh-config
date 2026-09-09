@@ -16,6 +16,7 @@ zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' # Case-insensitive completion
 
 # --- Core Aliases ---
+alias ff='fastfetch'
 alias clear='clear && printf "\e[3J"'
 alias cl='clear && printf "\e[3J"'
 alias ls='eza --icons --group-directories-first'
