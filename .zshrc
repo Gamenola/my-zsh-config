@@ -26,6 +26,7 @@ zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
 # Core Aliases
+alias show='zi'
 alias rb='reboot'
 alias po='poweroff'
 alias bios='sudo systemctl reboot --firmware-setup'
