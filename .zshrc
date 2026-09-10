@@ -26,13 +26,13 @@ zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
 # Core Aliases
-alias show='zi'
+alias show='eval "$(zoxide init zsh)"'
 alias rb='reboot'
 alias po='poweroff'
 alias bios='sudo systemctl reboot --firmware-setup'
 alias ff='fastfetch'
 alias clear='clear && printf "\e[3J"'
-alias cl='clear && printf "\e[3J"'
+alias cl='clear'
 alias ls='eza --icons --group-directories-first'
 alias ll='eza -lh --icons --group-directories-first'
 alias la='eza -lah --icons --group-directories-first'
