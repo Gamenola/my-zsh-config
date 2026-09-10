@@ -1,6 +1,6 @@
 # my zsh config
 
-Hey! I'm a 15-year-old developer/sysadmin enthusiast from Spain. This is my personal `zshrc` setup that I use daily on Arch Linux with KDE Plasma. 
+Hey! I'm a 15-year-old (in this moment) developer/sysadmin enthusiast from Spain. This is my personal `zshrc` setup that I use daily on Arch Linux with KDE Plasma. 
 
 I'm sharing it here in case anyone finds it useful or wants to take parts of it for their own setup. Feel free to use, modify, or adapt it to your own needs!
 
