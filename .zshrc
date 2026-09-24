@@ -11,6 +11,7 @@ setopt INC_APPEND_HISTORY_TIME
 
 # Environment & Keybindings
 export EDITOR="nano"
+setopt INTERACTIVE_COMMENTS
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
 export FZF_CTRL_T_OPTS="--preview 'bat --style=numbers --color=always --line-range :500 {}'"
 bindkey -e
@@ -38,7 +39,7 @@ alias ll='eza -lh --icons --group-directories-first'
 alias la='eza -lah --icons --group-directories-first'
 alias cat='bat --style=plain'
 alias syu='yay -Syu'
-alias clean='sudo pacman -Rns $(pacman -Qtdq) 2>/dev/null || echo "No orphaned packages found."'
+alias clean='pacman -Qtdq | sudo pacman -Rns - 2>/dev/null || echo "No orphaned packages found."'
 alias ccache='yay -Sc'
 
 # System & Maintenance Aliases
@@ -57,3 +58,5 @@ PROMPT='[%n@%m %1~]%# '
 # Plugins
 [ -f /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh ] && source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 [ -f /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+ZSH_HIGHLIGHT_STYLES[comment]='fg=244'
